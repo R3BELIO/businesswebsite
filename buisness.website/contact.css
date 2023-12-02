@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Poppins:wght@300;400;500;700;800&display=swap');
+*{
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+   font-family: 'poppins',sans-serif;
+   color:rgba(255,255,255,1);
+   background-color:rgba(237, 237, 237,.2);
+}
+::selection{
+  background-color: rgba(255,255,255,.25);
+}
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 11vh; 
+    background-color: #05050F;
+    align-items: center;
+}
+.header-tt{
+  margin-left: 60px;
+}
+ .header-title{
+    text-align: center;
+  }
+  .title,ul{
+    display: flex;
+    padding: 20px;
+    margin-left: 700px;
+    flex-direction: row;
+    gap: 50px;
+    list-style-type: none; 
+    align-items: center; 
+  }
+  a{
+    text-decoration: none;
+    color: rgba(255,255,255,1);
+    font-size: 16px;
+  }
+  .title-1{
+    border: 1px solid rgb(255,255,255);
+    padding: 10px 25px;
+    border-radius: 5px 5px; 
+  }
+  li:nth-child(4){
+    font-size: 14px;
+    font-family:Verdana, sans-serif;
+  }
+  .title-1:hover{
+    background: rgba(255,255,255,1);
+    color: black;
+  }
+   /* hero section starts  here */
+  .hero{
+    width: 100%;
+    height: 30vh;
+    padding-top: 90px;
+    background:hsl(240, 50%, 4%);
+  }
+  .hero-section{
+    padding-top: 75px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .hero-section >h2{
+    font-size: 40px;
+    font-family: 'poppins' sans-serif;
+    text-transform: capitalize;
+  }
+  .cc-par{
+    width: 100%;
+    text-align: center;     /* hero section ends here */
+    padding-top: 2rem;
+  }
+  /*    form container starts here   */
+  .cc-form{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-image:url("https://zmgtbooking.com/log.png"),url("https://zmgtbooking.com/log.png");
+    background-repeat:no-repeat, no-repeat;
+  }
+  .cc-form-details{
+    margin: auto;
+    width: 40%;
+    margin-top: 40px;
+  }
+  /*    form field  */
+  form{
+    width: 100%;
+    height:630px;
+    border: 3px solid #2f80ed;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,1);
+    text-align: center;
+    overflow: hidden;
+  }
+  /*  first input*/
+  input[type=text]{
+    margin: 40px 0px 0px 0px;
+    padding: 0px 10px;
+    width: 550px;
+    height: 45px;
+    background-color:#eff0f7;
+    border: none;
+    font-size: 0.8rem;
+    outline-style: none;
+  }
+  /*  Second  input*/
+  input.email{
+    width: 550px;
+    margin-top: 20px;
+    padding: 0px 10px;
+    width: 550px;
+    height: 45px;
+    background-color:#eff0f7;
+    border: none;
+    font-size: 0.8rem;
+    outline-style: none;
+  }
+  /*  text- area */
+   textarea{
+    margin-top: 20px;
+    width: 550px;
+    height: 200px;
+    padding: 10px 10px;
+    background-color: #eff0f7;
+    border:none;
+    outline-style: none;
+    font-size: 16px;
+    text-align: start;
+    overflow: hidden;
+    resize: none;
+    color: rgba(00,00,00,1);
+  }
+  /*  placeholder: dummy text inside input */
+  ::placeholder{
+    color: rgba(00,00,00,.35)
+  }
+  
+  .separator{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 20px;
+  }
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 2px solid rgba(00,00,00,.15);
+}
+.separator:not(:empty)::before {
+  margin-right: 1em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: 1em;
+}
+button.submit-button{
+  cursor: pointer;
+  width: 300px;
+  height: 40px;
+  background-color: rgb(48, 130, 237);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-family: 'poppins', sans-serif;
+  font-size: 0.8rem; 
+}
+.submit-button:hover{
+  background-color: hsla(214, 84%, 56%, 0.702);
+}
+.cc-form-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 30px;
+  justify-content: space-evenly;
+  justify-items: center;
+  border: none;
+  color: #05050F;
+
+}
+.cc-form-item{
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255,255,255,1);
+  align-items: center;
+  justify-content: center;
+}
+.item{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255,255,255,1); 
+  align-items: center;
+  justify-content:center;
+  margin-left: 10px;
+  border-radius: 50%;
+  box-shadow: 0 6px 12px rgba(00,00,00,.35); 
+}
+p>a{
+  color: red;
+  font-size: 0.6rem;
+}
+
+
+  /*  footer starts here */
+  footer{
+    width: 100%;
+    height: 50vh;
+    background: #05050F;
+    line-height: 2rem;
+    padding: 0 50px;
+  }
+  .footer-title{
+    font-family: 'poppins',sans-serif;
+    font-size: 18px;
+    padding: 20px 0px;
+    text-align: start;
+  }
+  .container{
+    display:flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 20px 30px;
+    width: inherit;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255,255,255,.25);
+  }
+  .flex{
+    width: 30rem;
+    height: 15rem;
+    background-color: #05050F;
+    border-radius: 5px;
+}  
+  /* scroll bar*/
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 5px #808080;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+ background: #05050F;
+ border-radius: 5px;
+ min-height: 2px;
+}
+::-webkit-scrollbar-thumb:hover{
+ background:#05050F;
+}

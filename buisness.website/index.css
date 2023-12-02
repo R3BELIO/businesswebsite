@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Poppins:wght@300;400;500;700;800&display=swap');
+*{
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+   font-family: 'poppins',sans-serif;
+   color:rgba(255,255,255,1);
+   background-color:hsl(0, 0%, 93%); 
+}
+nav{
+  display: block;
+}
+::selection{
+  background-color: rgba(255,255,255,.25);
+}
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 10vh; 
+    background-color: #05050F;
+    align-items: center;
+}
+.header-title,h1,span{
+  text-align: center;
+}
+.header-tt{
+    margin-left: 60px;
+}
+.title,ul{
+  display: flex;
+  margin-left:700px;;
+  flex-direction: row;
+  gap:50px;
+  list-style-type: none; 
+  align-items:center ; 
+}
+a{
+  text-decoration: none;
+  color: rgba(255,255,255,1);
+  font-size: 16px;
+}
+.title-1{
+  border: 2px solid white;
+  padding: 10px 25px;
+  border-radius: 5px 5px; 
+}
+li:nth-child(4){
+  font-size: 14px ;
+  font-family:Verdana, sans-serif;
+}
+
+/*a:hover{
+  color: black;
+  background-color: rgba(255,255,255,1); 
+}*/
+.title-1:hover{
+  background: rgba(255,255,255,1);
+  color: black;
+}
+
+.hero{
+  width: 100%;
+  height: 50vh;
+  padding-top: 105px;
+  background:hsl(240, 50%, 4%);
+}
+.hero-section{
+  padding-top: 75px;
+  text-align: center;
+  overflow: hidden;
+}
+.hero-section >h2{
+  font-size: 40px;
+}
+.button{
+  width: 13rem;
+  height: 2.7rem;
+  font-size: 1rem;
+  font-family: 'poppins', sans-serif;
+  color: rgba(255,255,255,1);
+  /*background-color: hsl(214, 24%, 26%);*/
+  background-color: hsl(214, 84%, 56%);
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*   cnnnnt  */
+.main{
+  display: block;
+  width: 100%;
+}
+.cc-grid-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 100%;
+  gap: 5rem;
+  padding: 80px;
+}
+.cc-grid-item{
+  display: flex;
+  width: 400px;
+  height: 150px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 5px;
+  padding: 10px 10px;
+  color: #000;
+  box-shadow: 0 6px 12px rgba(00,00,00,.35);
+}
+.cc-grid-item-details>p{
+  color: black;
+  font-size: 0.8rem;
+}
+.cc-grid-item-details p:first-child{
+  margin-top: 0;
+  color: black;
+  padding: 0px 10px 6px 10px;
+}
+.cc-grid-item-details p:nth-child(2){
+  margin-top:0;
+  margin-bottom: 0.7rem;
+  padding: 0 10px 10px 10px;
+}
+
+.booking-button{
+  width: 150px;
+  height: 40px;
+  border: none;
+  font-size: 0.8rem;
+  color:rgba(255,255,255,1);
+  background:hsl(214, 84%, 56%);
+  cursor: pointer;
+  margin-left: 10px;
+}
+.booking-button:hover{
+  background-color: rgba(48, 130, 237,.65);
+}
+/* custom scrollbar styling*/
+::-webkit-scrollbar{
+   width: 5px;
+}
+::-webkit-scrollbar-track{
+   box-shadow: inset 0 0 5px #808080;
+   border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background: #05050F;
+  border-radius: 10px;
+  min-height: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background:hsl(349, 100%, 59%);
+}
+footer{
+  width: 100%;
+  height: 50vh;
+  background: #05050F;
+  line-height: 2rem;
+  padding: 0 50px;
+}
+.footer-title{
+  font-family: 'poppins',sans-serif;
+  font-size: 18px;
+  padding: 20px 0px;
+  text-align: start;
+}
+.container{
+  display:flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 20px 30px;
+  width: inherit;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255,255,255,.25);
+}
+.flex{
+  width: 30rem;
+  height: 15rem;
+  background-color: #05050F;
+  border-radius: 5px;
+}  
